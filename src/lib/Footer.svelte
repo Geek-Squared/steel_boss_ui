@@ -12,6 +12,7 @@
     padding-bottom: 2%;
     box-sizing: border-box;
     background-color: #f8f8f8;
+    gap: 100px
 }
 
 .footer h2 {
@@ -26,13 +27,13 @@
 .footer-links {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
 }
 
 .footer-links-row {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 40%;
 }
 
 .footer-links-row button {
