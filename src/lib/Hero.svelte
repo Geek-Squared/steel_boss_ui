@@ -51,7 +51,7 @@
 
   p {
     line-height: 1.3em;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   @media (max-width: 768px) {
