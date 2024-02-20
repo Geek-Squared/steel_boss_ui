@@ -22,6 +22,6 @@
   </style>
   
   <div class="image-container">
-    <img src={image1} alt="Image 1" />
-    <img src={image2} alt="Image 2" />
+    <img src={image1} alt="Factory for coils" />
+    <img src={image2} alt="Coiled product " />
   </div>

@@ -50,10 +50,6 @@ a {
     color: #333;
 }
 
-a.active {
-    color: #0001ff;
-}
-
 .menu-button-container {
     display: flex;
     align-items: center;
@@ -127,10 +123,6 @@ a.active {
 
     .close-menu {
         background-color: none;
-    }
-
-    .hide {
-        display: none;
     }
 }
 </style>

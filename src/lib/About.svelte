@@ -30,21 +30,6 @@
     color: #888;
   }
 
-  .button {
-    background-color: #007bff;
-    width: 30%;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
   /* Responsive styles */
   @media (max-width: 768px) {
     .hero {
@@ -65,11 +50,6 @@
 
     .hero p {
       font-size: 18px;
-    }
-
-    .button {
-      width: 60%;
-      align-self: center;
     }
   }
 </style>

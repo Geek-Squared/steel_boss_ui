@@ -12,7 +12,6 @@
     padding-bottom: 2%;
     box-sizing: border-box;
     background-color: #f8f8f8;
-    gap: 100px
 }
 
 .footer h2 {
@@ -27,30 +26,13 @@
 .footer-links {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
 }
 
 .footer-links-row {
     display: flex;
     justify-content: space-between;
-    width: 40%;
-}
-
-.footer-links-row button {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 0;
-    background-color: #0001ff;
-    color: #fff;
-    cursor: pointer;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
-    margin-top: 20px;
+    width: 90%;
 }
 
 .contact-info {
@@ -61,10 +43,6 @@
 
 .contact-info i {
     margin-right: 10px;
-}
-
-button {
-    width: 300px
 }
 
 h2 {
@@ -104,10 +82,6 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-
-    button {
-        width: 100%;
-    }
 }
 </style>
 
@@ -125,7 +99,7 @@ h2 {
                 <a href="/about" class="link-button">About</a>
             </div>
             <div class="footer-links-row">
-                <a href="#" class="link-button">Services</a>
+                <a href="/products" class="link-button">Services</a>
                 <a href="/contact" class="link-button">Contact</a>
             </div>
         </div>

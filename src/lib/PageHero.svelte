@@ -32,20 +32,6 @@
       padding: 0 20px;
     }
   
-    .button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-  
     @media (max-width: 768px) {
       .hero {
         height: 50vh;
@@ -53,15 +39,6 @@
   
       .content h1 {
         font-size: 24px;
-      }
-  
-      .content p {
-        font-size: 16px;
-      }
-  
-      .button {
-        font-size: 14px;
-        padding: 8px 16px;
       }
     }
   </style>

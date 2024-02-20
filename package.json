@@ -24,6 +24,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@emailjs/browser": "^4.1.0",
+		"@sveltejs/adapter-node": "^4.0.1",
+		"@sveltejs/adapter-static": "^3.0.1",
 		"svelte-icons": "^2.1.0"
 	}
 }

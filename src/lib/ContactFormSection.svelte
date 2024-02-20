@@ -1,28 +1,33 @@
 <script>
   import { onMount } from 'svelte';
+  import emailjs from '@emailjs/browser';
+
   let name = '';
   let email = '';
   let message = '';
+  let isLoading = false;
+  let isSuccess = false;
 
-  onMount(async () => {
-    const emailjs = await import('https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js');
-    emailjs.init("your-user-id"); // replace 'your-user-id' with your actual EmailJS user ID
-  });
+  const sendEmail = (e) => {
+    e.preventDefault();
+    isLoading = true;
 
-  function sendEmail(event) {
-    event.preventDefault(); // prevent the form from being submitted normally
-
-    emailjs.send("service_id", "template_id", { // replace 'service_id' and 'template_id' with your actual EmailJS service ID and template ID
-      from_name: name,
-      from_email: email,
-      message: message
-    })
-    .then(function(response) {
-      console.log("SUCCESS!", response.status, response.text);
-    }, function(error) {
-      console.log("FAILED...", error);
-    });
-  }
+    emailjs
+      .sendForm('service_r7e9icz', 'template_ufb7hmo', e.target, {
+        publicKey: 'Da7__hrn3zhYhLOhR',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          isLoading = false;
+          isSuccess = true;
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          isLoading = false;
+        },
+      );
+  };
 </script>
 
 <style>
@@ -78,6 +83,15 @@
     <input bind:value={name} type="text" placeholder="Name" />
     <input bind:value={email} type="email" placeholder="Email" />
     <textarea bind:value={message} placeholder="Message"></textarea>
-    <button type="submit">Send Message</button>
+    <button type="submit" disabled={isLoading}>
+      {#if isLoading}
+        Sending...
+      {:else}
+        Send Message
+      {/if}
+    </button>
   </form>
+  {#if isSuccess}
+    <p>Message sent successfully!</p>
+  {/if}
 </div>

@@ -1,6 +1,5 @@
 <script>
 export let heading = "Our Values";
-export let paragraph = "Your long paragraph text goes here...";
 </script>
   
   <style>
