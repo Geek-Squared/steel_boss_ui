@@ -2,7 +2,7 @@
 export let heading = "Our Values";
 </script>
   
-  <style>
+  <style lang="scss">
 .text-container {
     display: flex;
     justify-content: space-between;

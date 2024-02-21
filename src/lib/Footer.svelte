@@ -2,7 +2,7 @@
 // import { Instagram, Facebook } from 'svelte-icons';
 </script>
 
-<style>
+<style lang="scss">
 .footer {
     display: flex !important;
     justify-content: space-between !important;

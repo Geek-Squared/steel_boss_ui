@@ -30,7 +30,7 @@
   };
 </script>
 
-<style>
+<style lang="scss">
   .contact-section {
     width: 95%;
     margin: auto;

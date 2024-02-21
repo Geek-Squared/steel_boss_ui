@@ -2,7 +2,7 @@
   import { goto } from "$app/navigation";
 </script>
 
-<style>
+<style lang="scss">
   .hero {
     display: flex;
     justify-content: space-evenly;

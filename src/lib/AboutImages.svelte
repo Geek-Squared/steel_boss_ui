@@ -3,7 +3,7 @@
     export let image2 = "/product.jpeg";
   </script>
   
-  <style>
+  <style lang="scss">
     .image-container {
       display: flex;
       justify-content: space-between;

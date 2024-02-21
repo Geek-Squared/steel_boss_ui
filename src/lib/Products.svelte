@@ -58,7 +58,7 @@ let products = [{
 </script>
 
   
-  <style>
+  <style lang="scss">
 .product-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
