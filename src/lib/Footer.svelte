@@ -6,10 +6,7 @@
 .footer {
     display: flex !important;
     justify-content: space-between !important;
-    padding-left: 6% !important;
-    padding-right: -1% !important;
-    padding-top: 2% !important;
-    padding-bottom: 2% !important;
+    padding: 20px 56px;
     box-sizing: border-box !important;
     background-color: #888 !important;
 }
