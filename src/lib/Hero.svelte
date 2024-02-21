@@ -56,7 +56,7 @@
 
   @media (max-width: 768px) {
     .hero {
-      height: 50vh;
+      height: 80vh;
     }
 
     .content h1 {

@@ -17,7 +17,7 @@ let products = [{
     {
         name: 'BULLNOSE/DOOR CAPS',
         description: 'At our service, we specialize in providing premium BULLNOSE/DOOR CAPS, meticulously crafted to enhance the durability and aesthetic appeal of your doors and exposed edges. Our expertly designed caps offer superior protection against damage and wear, ensuring long-lasting performance and visual allure. Whether you\'re looking to add a finishing touch to your doors or safeguard vulnerable edges, our BULLNOSE/DOOR CAPS are the perfect solution, combining functionality with elegance to meet your exacting requirements.',
-        image: 'https://via.placeholder.com/200'
+        image: '/cap.jpeg'
     },
     {
         name: 'Safe top nails',
