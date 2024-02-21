@@ -4,88 +4,88 @@
 
 <style>
 .footer {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 6%;
-    padding-right: -1%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    box-sizing: border-box;
-    background-color: #888;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding-left: 6% !important;
+    padding-right: -1% !important;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    box-sizing: border-box !important;
+    background-color: #888 !important;
 }
 
 .footer h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .faded-header {
-    color: #888;
+    color: #888 !important;
     /* Added */
 }
 
 .footer-links {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 70% !important;
 }
 
 .footer-links-row {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 90% !important;
 }
 
 .contact-info {
-    margin-top: 20px;
-    line-height: 1.6em;
-    color: #888;
+    margin-top: 20px !important;
+    line-height: 1.6em !important;
+    color: #888 !important;
 }
 
 .contact-info i {
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 
 h2 {
-    text-align: left;
+    text-align: left !important;
     font-size: 30px;
-    line-height: 1.3em;
-    font-weight: 400;
-    color: #fff
+    line-height: 1.3em !important;
+    font-weight: 400 !important;
+    color: #fff !important
 }
 
 .link-button {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 0;
-    background-color: #0001ff;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    width: 300px;
+    display: inline-block !important;
+    margin: 10px 0 !important;
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 0 !important;
+    background-color: #0001ff !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    width: 300px !important;
 }
 
 p {
-    color: #fff
+    color: #fff !important
 }
 
 @media (max-width: 768px) {
     .link-button {
-        width: 100%;
+        width: 100% !important;
     }
 }
 
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 20px !important;
     }
 
     .footer-links-row {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 }
 </style>
