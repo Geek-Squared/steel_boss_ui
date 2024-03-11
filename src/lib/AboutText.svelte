@@ -14,6 +14,7 @@ export let heading = "Our Values";
     font-size: 40px;
     text-align: left;
     font-weight: 400;
+    margin-top: 13px;
 }
 
 .text-container p {
@@ -24,15 +25,19 @@ export let heading = "Our Values";
     font-weight: 300;
     color: #888;
 }
+
+.strongText{
+    text-decoration: underline;
+}
 </style>
 
 <div class="text-container">
     <h1 class="header">{heading}</h1>
-    <p>Quality: We never compromise on the quality of our products. Each alloy that bears the Steel Boss Inc name undergoes rigorous testing and inspection to ensure it meets the highest standards of performance and durability.
+    <p><strong class="strongText">Quality:</strong> <br/> We never compromise on the quality of our products. Each alloy that bears the Steel Boss Inc name undergoes rigorous testing and inspection to ensure it meets the highest standards of performance and durability.  <br/>  <br/> 
 
-        Innovation: We embrace innovation as the cornerstone of our success. From cutting-edge manufacturing techniques to groundbreaking product designs, we constantly push the boundaries of what's possible to deliver solutions that exceed expectations.
+        <strong class="strongText">Innovation:</strong> <br/> We embrace innovation as the cornerstone of our success. From cutting-edge manufacturing techniques to groundbreaking product designs, we constantly push the boundaries of what's possible to deliver solutions that exceed expectations.  <br/>  <br/> 
 
-        Integrity: We conduct our business with the utmost integrity, honesty, and transparency. Our customers trust us to deliver on our promises, and we take that responsibility seriously.
+        <strong class="strongText">Integrity:</strong> <br/> We conduct our business with the utmost integrity, honesty, and transparency. Our customers trust us to deliver on our promises, and we take that responsibility seriously.  <br/>  <br/> 
 
-        Reliability: Dependability is at the core of everything we do. Our customers rely on us to provide consistent, timely, and efficient service, and we go above and beyond to exceed their expectations every step of the way.</p>
+        <strong class="strongText">Reliability:</strong> <br/> Dependability is at the core of everything we do. Our customers rely on us to provide consistent, timely, and efficient service, and we go above and beyond to exceed their expectations every step of the way.</p>
 </div>

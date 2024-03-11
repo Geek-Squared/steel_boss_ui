@@ -5,11 +5,13 @@
 <style lang="scss">
 .footer {
     display: flex !important;
-    justify-content: space-between !important;
+    justify-content: flex-start;
+    gap: 5%;
+    height: 43vh;
     padding: 20px 56px;
     box-sizing: border-box !important;
-    background-color: #888 !important;
-}
+    background-color: #333 !important;
+  }
 
 .footer h2 {
     margin-bottom: 20px !important;
@@ -17,7 +19,7 @@
 
 .faded-header {
     color: #888 !important;
-    /* Added */
+   
 }
 
 .footer-links {
@@ -33,13 +35,14 @@
 }
 
 .contact-info {
-    margin-top: 20px !important;
+    margin-top: 10px !important;
     line-height: 1.6em !important;
     color: #888 !important;
 }
 
 .contact-info i {
     margin-right: 10px !important;
+    margin-top: 0.5%;
 }
 
 h2 {
@@ -64,7 +67,58 @@ h2 {
 }
 
 p {
-    color: #fff !important
+    color: #fff !important;
+}
+
+.about {
+    width: 25%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  width: 20%; 
+  margin-top: 0.5%;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5%;
+}
+
+.quick-links a {
+  display: flex;
+  align-items: center; 
+  line-height: 2em;
+}
+.social-media a {
+  display: flex;
+  align-items: center; 
+  line-height: 2em;
+}
+
+ .quick-links a::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.social-media a::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -88,9 +142,30 @@ p {
 </style>
 
 <div class="footer">
+    <div class="about">
+      <h2>About</h2>
+      <p>Steel Boss Incorporated is a Steel Fabrication company which started off in 2022 selling galvanised  and Chromadek IBR sheets decoiled from mother coils and cut to specified lengths.<br/>
+        The client base consist exclusively of Retail and informal business customers in Chitungwiza and surrounding areas.
+        Steel Boss Incorporated also does curving, bull nosing and cranking of sheets was and has a trading section for steel and roofing accessories also in operation.</p>
+    </div>
   
-        <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> 30074 Unit G Makoni Shops, Opp City Council, Seke, Chitungwiza, Zimbabwe</p>
-            <p><i class="fas fa-phone"></i> +263 77 803 2070</p>
-        </div>
-</div>
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <p><i class="fas fa-map-marker-alt"></i> 30074 Unit G Makoni Shops, Opp City Council, <br/> Seke, Chitungwiza, Zimbabwe</p>
+      <p><i class="fas fa-phone"></i> +263 77 803 2070</p>
+      <p><i class="fas fa-envelope"></i> info@steelboss.org</p>
+    </div>
+  
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <a href="/">Home</a>
+      <a href="/products">Products</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+
+    <div class="social-media">
+        <h2>Connect</h2>
+        <a href="https://www.facebook.com/steelbossinc">Facebook</a>
+      </div>
+  </div>

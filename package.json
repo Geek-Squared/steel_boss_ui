@@ -25,6 +25,7 @@
 	"type": "module",
 	"dependencies": {
 		"@emailjs/browser": "^4.1.0",
+		"@fortawesome/free-solid-svg-icons": "^6.5.1",
 		"@sveltejs/adapter-node": "^4.0.1",
 		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/adapter-vercel": "^5.1.0",

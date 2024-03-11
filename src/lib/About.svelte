@@ -14,6 +14,7 @@
     font-size: 40px;
     line-height: 1.3em;
     font-weight: 400;
+    margin-left: -6%;
   }
 
   .header {

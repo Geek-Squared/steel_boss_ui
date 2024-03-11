@@ -1,6 +1,13 @@
 <script>
-  let backgroundImage = '/header.jpeg';
+  let imageIndex = 0;
+  let images = ['/header.jpeg', '/header2.jpeg', '/header3.jpeg', '/header4.jpeg'];
+  let backgroundImage = images[imageIndex];
   import { goto } from '$app/navigation';
+
+  setInterval(() => {
+    imageIndex = (imageIndex + 1) % images.length;
+    backgroundImage = images[imageIndex];
+  }, 3000); // Change image every 3 seconds
 </script>
 
 <style lang="scss">
@@ -40,9 +47,11 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+    width: 300px;
   }
 
   h1 {
