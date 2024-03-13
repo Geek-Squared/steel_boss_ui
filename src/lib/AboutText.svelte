@@ -28,6 +28,7 @@ export let heading = "Our Values";
 
 .strongText{
     text-decoration: underline;
+    color: #333;
 }
 </style>
 

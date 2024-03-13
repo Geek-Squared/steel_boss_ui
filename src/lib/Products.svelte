@@ -28,7 +28,7 @@ let products = [
     {
         name: 'Valley Gutters',
         description: 'Ensure efficient rainwater management with our specialized Valley Gutters service, designed to channel and divert water away from vulnerable roof intersections. Crafted from high-quality materials and installed with precision, our valley gutters offer reliable protection against water pooling and potential leaks, preserving the integrity of your roofing system for years to come. With our tailored solutions and expert craftsmanship, you can trust our Valley Gutters service to keep your building dry and secure, no matter the weather.',
-        image: '/14.jpeg'
+        image: '/gutter.jpeg'
     },
     {
         name: 'Flashings',

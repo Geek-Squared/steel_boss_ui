@@ -4,13 +4,13 @@
 
 <style lang="scss">
 .footer {
-    display: flex !important;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: space-between;
     gap: 5%;
-    height: 43vh;
     padding: 20px 56px;
-    box-sizing: border-box !important;
-    background-color: #333 !important;
+    box-sizing: border-box;
+    background-color: #333;
+    bottom: 0;
   }
 
 .footer h2 {
@@ -122,8 +122,24 @@ a {
 }
 
 @media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-links-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .link-button {
-        width: 100% !important;
+        width: 100%;
+    }
+
+    .about, .contact-info, .quick-links, .social-media {
+        width: 100%;
+        text-align: center;
     }
 }
 
