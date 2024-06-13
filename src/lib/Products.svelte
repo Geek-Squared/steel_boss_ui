@@ -11,14 +11,14 @@ let products = [
         image: '/11.jpeg'
     },
     {
-        name: 'IBR Corrogated Sheets',
+        name: 'IBR Corrugated Sheets',
         description: 'Discover the perfect blend of style and durability with our Q Tiles Chromadek Sheets service, offering innovative roofing solutions that redefine aesthetics and performance. Crafted from premium materials and coated with Chromadek for superior corrosion resistance, our Q Tiles Sheets bring the timeless elegance of tiled roofs to modern construction projects. Whether it\'s residential villas or commercial complexes, our Q Tiles Chromadek Sheets service delivers unparalleled beauty and longevity, setting your building apart with timeless sophistication.',
-        image: '/cg.jpeg'
+        image: '/ibr-cor.jpeg'
     },
     {
-        name: 'Q Tiles Chromadek Sheets',
+        name: 'Q-Tiles Chromadek Sheets',
         description: 'Discover the perfect blend of style and durability with our Q Tiles Chromadek Sheets service, offering innovative roofing solutions that redefine aesthetics and performance. Crafted from premium materials and coated with Chromadek for superior corrosion resistance, our Q Tiles Sheets bring the timeless elegance of tiled roofs to modern construction projects. Whether it\'s residential villas or commercial complexes, our Q Tiles Chromadek Sheets service delivers unparalleled beauty and longevity, setting your building apart with timeless sophistication.',
-        image: '/10.jpeg'
+        image: '/qtile.jpeg'
     },
     {
         name: 'Rolltop Ridges',
@@ -33,13 +33,13 @@ let products = [
     {
         name: 'Flashings',
         description: 'Protect your building against the elements with our premium Flashings service, offering tailored solutions to prevent water penetration and safeguard critical areas. Our meticulously crafted flashings, expertly installed by our seasoned professionals, provide superior weatherproofing and drainage management, ensuring long-term structural integrity and peace of mind. Whether it\'s roof valleys, chimneys, or windows, our comprehensive flashings service delivers unmatched protection and durability, keeping your building dry and secure in any weather condition.',
-        image: '/15.jpeg'
+        image: '/flash.jpeg'
     },
 
     {
         name: 'BULLNOSE/DOOR CAPS',
         description: 'At our service, we specialize in providing premium BULLNOSE/DOOR CAPS, meticulously crafted to enhance the durability and aesthetic appeal of your doors and exposed edges. Our expertly designed caps offer superior protection against damage and wear, ensuring long-lasting performance and visual allure. Whether you\'re looking to add a finishing touch to your doors or safeguard vulnerable edges, our BULLNOSE/DOOR CAPS are the perfect solution, combining functionality with elegance to meet your exacting requirements.',
-        image: '/1.jpeg'
+        image: '/bull.jpeg'
     },
     {
         name: 'Safe top nails',
@@ -59,7 +59,7 @@ let products = [
     {
         name: 'Allucusion /Allububble insulation rolls',
         description: 'Enhance the energy efficiency and comfort of your spaces with our cutting-edge Allucusion/Allububble insulation rolls. Engineered to regulate temperature and reduce energy consumption, our insulation rolls combine innovative materials and advanced manufacturing techniques to deliver unmatched performance. From bubble wrap to reflective foil laminates, our insulation rolls offer versatile solutions for a wide range of applications, ensuring optimal thermal comfort and energy savings for your buildings.',
-        image: '/16.png'
+        image: '/bubble.jpeg'
     },
 ];
 </script>

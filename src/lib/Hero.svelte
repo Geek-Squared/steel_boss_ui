@@ -1,6 +1,6 @@
 <script>
   let imageIndex = 0;
-  let images = ['/header.jpeg', '/header2.jpeg', '/header3.jpeg', '/header4.jpeg'];
+  let images = ['/hero.jpeg', '/header2.jpeg', '/header3.jpeg', '/header4.jpeg'];
   let backgroundImage = images[imageIndex];
   import { goto } from '$app/navigation';
 
