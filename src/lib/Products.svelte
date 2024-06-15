@@ -18,7 +18,7 @@ let products = [
     {
         name: 'Q-Tiles Chromadek Sheets',
         description: 'Discover the perfect blend of style and durability with our Q Tiles Chromadek Sheets service, offering innovative roofing solutions that redefine aesthetics and performance. Crafted from premium materials and coated with Chromadek for superior corrosion resistance, our Q Tiles Sheets bring the timeless elegance of tiled roofs to modern construction projects. Whether it\'s residential villas or commercial complexes, our Q Tiles Chromadek Sheets service delivers unparalleled beauty and longevity, setting your building apart with timeless sophistication.',
-        image: '/qtile.jpeg'
+        image: '/q-tile.jpeg'
     },
     {
         name: 'Rolltop Ridges',
