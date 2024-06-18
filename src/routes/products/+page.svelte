@@ -6,8 +6,8 @@
 </script>
 
 <main>
-    <Navbar />
-    <PageHero />
-<Products />
-<Footer />
+  <Navbar />
+  <PageHero />
+  <Products />
+  <Footer />
 </main>
