@@ -1,5 +1,5 @@
 <script>
-  let backgroundVideo = './hero.mp4';
+  // let backgroundVideo = './hero.mp4';
   export let headingText = "Our Products";
 </script>
 
@@ -68,8 +68,8 @@
 </style>
 
 <div class="hero">
-  <video src={backgroundVideo} autoplay loop muted></video>
-  <div class="overlay"></div>
+  <!-- <video src={backgroundVideo} autoplay loop muted></video> -->
+  <!-- <div class="overlay"></div> -->
   <div class="content">
     <h1>{headingText}</h1>
   </div>
