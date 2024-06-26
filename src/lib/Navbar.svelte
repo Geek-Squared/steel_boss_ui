@@ -23,6 +23,7 @@ let showMenu = false;
 .navbar {
     display: flex;
     justify-content: space-between;
+    height: 150px;
     align-items: center;
     padding: 20px;
     background-color: white;
@@ -31,9 +32,9 @@ let showMenu = false;
     z-index: 100;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
+img {
+    width: 100px;
+    height: 200px;
 }
 
 .menu {
@@ -88,7 +89,7 @@ a {
 }
 
 .logo img {
-    height: 100px;
+    height: 190px;
     width: auto;
 }
 
