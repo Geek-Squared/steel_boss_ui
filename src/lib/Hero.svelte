@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
