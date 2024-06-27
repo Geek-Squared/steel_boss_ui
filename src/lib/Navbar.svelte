@@ -14,39 +14,49 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        transition: padding 0.3s;
+        transition: padding 0.3s, opacity 0.3s;
     }
-    
+
     .navbar.scrolled {
         padding: 10px;
+        opacity: 0.9;
     }
-    
+
+    .logo {
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .logo.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
     .logo img {
-        width: 300px;
+        width: 150px;
         height: auto;
-        margin-bottom: -20px;
+        margin-bottom: 20px;
     }
-    
+
     .menu {
         display: flex;
         gap: 30px;
         justify-content: center;
         width: 100%;
     }
-    
+
     a {
         text-decoration: none;
         font-size: 23px;
         font-weight: 500;
         color: #333;
     }
-    
+
     .menu-button-container {
         display: flex;
         align-items: center;
         gap: 80px;
     }
-    
+
     .quote-button {
         color: white;
         width: 200px;
@@ -61,13 +71,13 @@
         border-radius: 4px;
         background-color: #0001ff;
     }
-    
+
     .menu-icon {
         display: none;
         cursor: pointer;
         font-size: 30px;
     }
-    
+
     .close-menu {
         display: none;
         position: absolute;
@@ -77,12 +87,12 @@
         border: none;
         font-size: 2em;
     }
-    
+
     @media (max-width: 768px) {
         .navbar {
             height: auto;
         }
-    
+
         .menu {
             position: absolute;
             top: 100%;
@@ -93,20 +103,20 @@
             flex-direction: column;
             display: none;
         }
-    
+
         .menu-icon {
             display: block;
         }
-    
+
         .menu-button-container.active .menu,
         .menu-button-container.active .close-menu {
             display: flex;
         }
-    
+
         .quote-button {
             display: none;
         }
-    
+
         .close-menu {
             background-color: none;
         }
@@ -129,18 +139,20 @@
                         { name: 'Contact', url: '/contact' }
                     ];
                     let showMenu = false;
-                    
-                    window.onscroll = function() {
-                        let navbar = document.querySelector('.navbar');
-                        let logo = document.querySelector('.logo');
-                        if (window.scrollY > 50) {
-                            logo.style.display = 'none';
-                            navbar.classList.add('scrolled');
-                        } else {
-                            logo.style.display = 'flex';
-                            navbar.classList.remove('scrolled');
-                        }
-                    };
+
+                    window.addEventListener('scroll', function() {
+                        requestAnimationFrame(() => {
+                            let navbar = document.querySelector('.navbar');
+                            let logo = document.querySelector('.logo');
+                            if (window.scrollY > 50) {
+                                logo.classList.add('hidden');
+                                navbar.classList.add('scrolled');
+                            } else {
+                                logo.classList.remove('hidden');
+                                navbar.classList.remove('scrolled');
+                            }
+                        });
+                    });
 
                     document.addEventListener('DOMContentLoaded', function() {
                         const menuContainer = document.querySelector('.menu');
