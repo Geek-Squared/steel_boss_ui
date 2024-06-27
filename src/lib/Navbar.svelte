@@ -25,19 +25,17 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        height: 200px;
         background-color: white;
-        height: auto;
         position: sticky;
         top: 0;
         z-index: 100;
     }
     
     .logo img {
-        width: 350px;
-        height: auto;
-        margin-bottom: -120px;
-        margin-top: -80px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: -65px;
+    margin-top: -85px;
     }
     
     .menu {
