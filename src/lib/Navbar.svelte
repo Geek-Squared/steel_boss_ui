@@ -23,10 +23,14 @@
         let navbar = document.querySelector('.navbar');
         let logo = document.querySelector('.logo');
         if (window.scrollY > 50) {
+            //@ts-ignore
             logo.style.display = 'none';
+            //@ts-ignore
             navbar.classList.add('scrolled');
         } else {
+            //@ts-ignore
             logo.style.display = 'flex';
+            //@ts-ignore
             navbar.classList.remove('scrolled');
         }
     };
