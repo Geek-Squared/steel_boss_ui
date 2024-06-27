@@ -32,9 +32,9 @@
     }
 
     .logo img {
-        width: 150px;
+        width: 350px;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
     }
 
     .menu {
