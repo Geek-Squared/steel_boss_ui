@@ -150,10 +150,6 @@ a {
         padding: 20px !important;
     }
 
-    .footer-links-row {
-        flex-direction: column !important;
-        align-items: center !important;
-    }
 }
 </style>
 

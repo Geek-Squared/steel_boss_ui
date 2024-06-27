@@ -27,9 +27,6 @@
         color: #888;
     }
     
-    .strongText{
-        text-decoration: underline;
-    }
     </style>
     
     <main>

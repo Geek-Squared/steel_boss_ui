@@ -1,41 +1,9 @@
-<script>
-    let menuItems = [{
-            name: 'Home',
-            url: '/'
-        },
-        {
-            name: 'Our Products',
-            url: '/products'
-        },
-        {
-            name: 'About',
-            url: '/about'
-        },
-        {
-            name: 'Contact',
-            url: '/contact'
-        },
-    ];
-    let showMenu = false;
-    
-    // Function to handle scroll and hide the logo
-    window.onscroll = function() {
-        let navbar = document.querySelector('.navbar');
-        let logo = document.querySelector('.logo');
-        if (window.scrollY > 50) {
-            //@ts-ignore
-            logo.style.display = 'none';
-            //@ts-ignore
-            navbar.classList.add('scrolled');
-        } else {
-            //@ts-ignore
-            logo.style.display = 'flex';
-            //@ts-ignore
-            navbar.classList.remove('scrolled');
-        }
-    };
-    </script>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
     <style lang="scss">
     .navbar {
         display: flex;
@@ -56,7 +24,7 @@
     .logo img {
         width: 300px;
         height: auto;
-        margin-bottom: -15px;
+        margin-bottom: -20px;
     }
     
     .menu {
@@ -144,24 +112,52 @@
         }
     }
     </style>
-    
+</head>
+<body>
     <div class="navbar">
         <div class="logo">
             <img src="/logo.jpeg" alt="Logo">
         </div>
-        <div class="menu-button-container" class:active={showMenu}>
-            <button class="close-menu" on:click={() => showMenu = false}>X</button>
+        <div class="menu-button-container">
+            <button class="close-menu" onclick="showMenu = false">X</button>
             <div class="menu">
-                {#each menuItems as item (item.name)}
-                <a href={item.url}>{item.name}</a>
-                {/each}
+                <script>
+                    let menuItems = [
+                        { name: 'Home', url: '/' },
+                        { name: 'Our Products', url: '/products' },
+                        { name: 'About', url: '/about' },
+                        { name: 'Contact', url: '/contact' }
+                    ];
+                    let showMenu = false;
+                    
+                    window.onscroll = function() {
+                        let navbar = document.querySelector('.navbar');
+                        let logo = document.querySelector('.logo');
+                        if (window.scrollY > 50) {
+                            logo.style.display = 'none';
+                            navbar.classList.add('scrolled');
+                        } else {
+                            logo.style.display = 'flex';
+                            navbar.classList.remove('scrolled');
+                        }
+                    };
+
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const menuContainer = document.querySelector('.menu');
+                        menuItems.forEach(item => {
+                            const link = document.createElement('a');
+                            link.href = item.url;
+                            link.textContent = item.name;
+                            menuContainer.appendChild(link);
+                        });
+                    });
+                </script>
             </div>
             <a href="/contact">
                 <button class="quote-button">GET A QUOTE</button>
             </a>
         </div>
-        {#if !showMenu}
-        <div class="menu-icon" on:click={() => showMenu = !showMenu}>☰</div>
-        {/if}
+        <div class="menu-icon" onclick="showMenu = !showMenu">☰</div>
     </div>
-    
+</body>
+</html>
