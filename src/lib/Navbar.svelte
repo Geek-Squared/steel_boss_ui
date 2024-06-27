@@ -32,8 +32,8 @@
     }
     
     .logo img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-bottom: -65px;
     margin-top: -85px;
     }
