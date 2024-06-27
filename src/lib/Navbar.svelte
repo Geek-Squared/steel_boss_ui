@@ -17,6 +17,19 @@
         },
     ];
     let showMenu = false;
+    
+    // Function to handle scroll and hide the logo
+    window.onscroll = function() {
+        let navbar = document.querySelector('.navbar');
+        let logo = document.querySelector('.logo');
+        if (window.scrollY > 50) {
+            logo.style.display = 'none';
+            navbar.classList.add('scrolled');
+        } else {
+            logo.style.display = 'flex';
+            navbar.classList.remove('scrolled');
+        }
+    };
     </script>
     
     <style lang="scss">
@@ -29,13 +42,17 @@
         position: sticky;
         top: 0;
         z-index: 100;
+        transition: padding 0.3s;
+    }
+    
+    .navbar.scrolled {
+        padding: 10px;
     }
     
     .logo img {
-    width: 300px;
-    height: 300px;
-    margin-bottom: -65px;
-    margin-top: -85px;
+        width: 300px;
+        height: auto;
+        margin-bottom: -15px;
     }
     
     .menu {
@@ -126,7 +143,7 @@
     
     <div class="navbar">
         <div class="logo">
-            <img src="/logo.png" alt="Logo">
+            <img src="/logo.jpeg" alt="Logo">
         </div>
         <div class="menu-button-container" class:active={showMenu}>
             <button class="close-menu" on:click={() => showMenu = false}>X</button>
